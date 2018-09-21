@@ -1,5 +1,12 @@
 import {slice} from  '../base/index'
 
+/**
+ * 把大数组切分成小数组
+ * chunk([1,2,3], 2) => [[1,2], [3]]
+ * chunkSize 不传默认是1
+ * @param {传入的数组} arr 
+ * @param {把大数组切分成数组长度为size的小数组}} chunkSize 
+ */
 const chunk = (arr, chunkSize) => {
   let length = arr == null ? 0 : arr.length
 

@@ -4,7 +4,8 @@ import {
   slice
 } from './lodash/base'
 import {
-  chunk
+  chunk,
+  compact
 } from './lodash/array'
 class App extends Component {
   constructor(props) {
@@ -15,10 +16,12 @@ class App extends Component {
   }
   componentDidMount() {
     this.testApi()
+    window.compact = compact
   }
   testApi() {
     window.slice = slice
     window.chunk = chunk
+
     var result = slice(this.state.arr, 0,6)
     console.log(result)
   }
