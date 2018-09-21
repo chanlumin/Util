@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import slice from './lodash/base/slice'
-
+import {
+  slice
+} from './lodash/base'
+import {
+  chunk
+} from './lodash/array'
 class App extends Component {
   constructor(props) {
     super(props) 
@@ -14,13 +18,14 @@ class App extends Component {
   }
   testApi() {
     window.slice = slice
+    window.chunk = chunk
     var result = slice(this.state.arr, 0,6)
     console.log(result)
   }
   render() {
     return (
       <div className="App">
-        Are You OK ?
+       Home
       </div>
     );
   }
