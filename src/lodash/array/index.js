@@ -1,8 +1,12 @@
 import chunk from './chunk'
-import compact from './compact'
+import {compact,compact1 } from './compact'
+import concat from './concat'
+
 
 
 export {
   chunk,
-  compact
+  compact,
+  compact1,
+  concat
 }
