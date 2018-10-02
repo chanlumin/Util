@@ -8,6 +8,8 @@ import strictIndexOf from './strictIndexOf'
 import baseIndexOf from './baseIndexOf'
 import arrayIncludes from './arrayIncludes'
 
+// arrayIncludesWith
+// freeGlobal
 
 
 export {

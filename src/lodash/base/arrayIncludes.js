@@ -12,4 +12,4 @@ function arrayIncludes(arr, value) {
 }
 
 
-export default arrayIncludes
+
