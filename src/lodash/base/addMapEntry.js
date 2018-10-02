@@ -10,3 +10,5 @@ function addMapEntry(map, pairs) {
   map.set(pairs[0], pairs[1])
   return map 
 }
+
+export default addMapEntry

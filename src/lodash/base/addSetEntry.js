@@ -10,3 +10,5 @@ function addSetEntry(set, value) {
   set.set(value) 
   return set 
 }
+
+export default addSetEntry
