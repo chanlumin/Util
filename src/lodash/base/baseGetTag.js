@@ -21,7 +21,7 @@ function baseGetTag(value) {
   // 所以先去掉这个属性，等到类型判断完成之后在把这个属性加上
   const isOwn = hasOwnProperty.call(value, symStringTag)
   const tag = value[symStringTag]
-  const unmask = false // 还么去掉属性
+  let unmask = false // 还么去掉属性
   try {
     value[symStringTag] = undefined
     unmask = true 

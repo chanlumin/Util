@@ -7,6 +7,7 @@ import baseIsNaN from './baseIsNaN'
 import strictIndexOf from './strictIndexOf'
 import baseIndexOf from './baseIndexOf'
 import arrayIncludes from './arrayIncludes'
+import getTag from './getTag'
 
 // arrayIncludesWith
 // freeGlobal
@@ -21,5 +22,6 @@ export {
   arrayEachRight,
   arrayEach,
   baseIndexOf,
-  arrayIncludes
+  arrayIncludes,
+  getTag
 }
