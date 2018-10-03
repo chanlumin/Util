@@ -1,6 +1,6 @@
 import React from  'react'
 import {after} from './function/index';
-import {castArray} from './lang/index'
+import {castArray,isArguments} from './lang/index'
 import {baseIndexOf,arrayIncludes,getTag} from './base'
 
 class Home extends  React.Component {
@@ -11,6 +11,7 @@ class Home extends  React.Component {
         window.baseIndexOf = baseIndexOf
         window.arrayIncludes = arrayIncludes
         window.getTag = getTag
+        window.isArguments = isArguments
     }
     render() {
         return (
